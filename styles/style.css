@@ -280,3 +280,86 @@ font-weight: 800;
   margin-right: 470px;
   padding: 50px 77px 50px 50px;
 }
+.btn-2{
+  margin: 0 auto;
+}
+
+/* destination part */
+.destination{
+  display: flex;
+  gap: 3rem;
+}
+.destination li{
+  color: rgb(19, 19, 24);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+.destination .text-content{
+  row-gap: 2rem;
+}
+
+/* form part */
+
+.subscribe{
+  display: grid;
+  grid-template-columns: .40fr .60fr;
+  
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+.form-part p{
+   text-align: left;
+   margin-bottom: 3rem;
+}
+.form-part .price-heading{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.cmn-input{
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+  width: 393px;
+  height: 52px;
+  background-color: rgba(19, 19, 24, 0.05);
+  padding: 10px 0px 10px 20px;
+
+}
+.input-btn{
+  width: 413px;
+  height: 72px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px 0px 10px 20px;
+}
+.image{
+  position: relative;
+}
+.dis-container{
+  border-radius: 16px;
+  background: rgb(255, 84, 0);
+  width: 244px;
+  height: 50px;
+  padding: 35px 45px;
+  position: absolute;
+  top: 250px;
+  left: 327px;
+  transform: rotate(-19.63deg);
+}
+.one{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.two{
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 800;
+}
