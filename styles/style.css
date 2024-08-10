@@ -75,6 +75,9 @@ p{
   height: 56px;
   margin-right: 0.5rem;
 }
+.ham-burger{
+  display: none;
+}
 
 /* banner */
 
@@ -140,6 +143,7 @@ input,select{
   display: flex;
   gap: 3rem;
 }
+
 .text-content{
   display: flex;
   flex-direction: column;
@@ -200,7 +204,7 @@ input,select{
 }
 
 /* deals and logos */
-.deals h3{
+.deals > h3{
   margin-bottom: 24px;
 }
 .deals > p{
@@ -340,6 +344,10 @@ font-weight: 800;
 }
 .image{
   position: relative;
+  width: 100%;
+}
+.image img{
+  width: 100%;
 }
 .dis-container{
   border-radius: 16px;
@@ -362,4 +370,183 @@ font-weight: 800;
   color: rgb(255, 255, 255);
   font-size: 32px;
   font-weight: 800;
+}
+
+/* footer sec */
+.footer-sec{
+  background: rgba(19, 19, 24, 0.05);
+  padding: 2rem 0;
+}
+.footer-sec .logo{
+  margin: 2rem auto;
+}
+.footer-sec p{
+  margin: 0 250px;
+}
+.social{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}
+.social i{
+  height: 44px;
+  font-size: 24px;
+}
+.footer-sec hr{
+  margin: 2rem 200px;
+}
+
+/* Responsive design */
+@media screen and (max-width:590px) {
+  .navlinks{
+    display: none;
+  }
+  .ham-burger{
+    display: block;
+  }
+  h3{
+    font-size: 26px;
+  }
+  .ham-burger i{
+    font-size: 26px;
+  }
+  .container{
+    margin: 2rem auto;
+}
+.explore-container{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+  .explore-container h3{
+    font-size: 1.4rem;
+  }
+ .explore-travel{
+  padding: 40px 0;
+  height: 100%;
+ }
+ .travel-input{
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+ }
+ .travel-input input,
+ .travel-input select,
+ .travel-input .btn-primary{
+  margin: 1rem 0;
+ }
+ .popular-sec{
+  flex-direction: column;
+ }
+ .popular-sec img{
+  height: 100%;
+  width: 100%;
+}
+.row-1,
+.row-2,
+.row-3{
+  grid-template-columns: 1fr;
+}
+.deals > p{
+  margin: 0 30px 40px 30px;
+}
+.discount{
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 24px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+.discount-2{
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 24px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+.dis-logo{
+  display: block;
+  margin-bottom: 12px;
+}
+.price-heading{
+  margin-bottom: 12px;
+}
+.price-details p{
+  margin-bottom: 12px;
+}
+.price-details button{
+  margin-top: 12px;
+}
+.destination{
+  flex-direction: column;
+}
+.country-card img{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.subscribe {
+  display: block; /* Stack .form-part and .image vertically */
+}
+
+.form-part, .image {
+  width: 100%; /* Ensure they take full width */
+  margin-bottom: 20px; /* Add some spacing between them */
+}
+.form-part{
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 84, 0);
+  border-radius: 16px;
+  height: 100%;
+  padding: 24px;
+
+}
+.form-input {
+  gap: 1rem; /* Reduce gap for smaller screens */
+}
+
+.cmn-input{
+  width: 93%;  
+}
+.input-btn {
+  width: 100%;  
+}
+.image {
+  position: relative;
+  height: auto; /* Adjust image container height */
+}
+
+.dis-container {
+  width: 200px;
+  height: 70px;
+  padding: 10px 10px;
+  position: absolute; 
+  top: 90px;
+  left: 110px;
+  transform: rotate(-19.63deg); 
+}
+.one{
+  font-size: 16px;
+}
+.two{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.footer-sec p{
+  margin: 0 50px;
+}
+.footer-sec .logo{
+  margin: 1rem auto;
+  justify-content: center;
+}
+.social{
+  margin: 1rem auto;
+}
+.footer-sec hr{
+  margin: 2rem 40px;
+}
 }
