@@ -440,15 +440,20 @@ font-weight: 800;
  .popular-sec{
   flex-direction: column;
  }
- .popular-sec img{
-  height: 100%;
-  width: 100%;
-}
+.country-card img{
+  height: 198px;
+} 
 .row-1,
 .row-2,
 .row-3{
   grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
 }
+.country{
+  font-size: 1.5rem;
+}
+
 .deals > p{
   margin: 0 30px 40px 30px;
 }
@@ -484,7 +489,7 @@ font-weight: 800;
 .destination{
   flex-direction: column;
 }
-.country-card img{
+.country-card-2 img{
   height: 100%;
   width: 100%;
   margin: 0 auto;
